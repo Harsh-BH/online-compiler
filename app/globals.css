@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* styles/globals.css */
+
+.editor-container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.editor-container .monaco-editor {
+  background: #ffffff;
+}
+
+.dark .editor-container .monaco-editor {
+  background: #1e1e1e;
+}
+
+.monaco-scrollable-element {
+  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.1);
+  scrollbar-width: thin;
+}
+
+.monaco-scrollable-element::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.monaco-scrollable-element::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.monaco-scrollable-element::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
